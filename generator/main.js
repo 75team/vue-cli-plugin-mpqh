@@ -18,10 +18,5 @@ module.exports = async (api, options) => {
 
   // reset pkg
   generator.pkg = Object.assign({}, generator.originalPkg)
-
-  api.extendPackage({
-    devDependencies: {
-      '@qihoo/seapp-builder': '^1.0.0'
-    }
-  })
+  api.extendPackage(require('./template/package.json'))
 }

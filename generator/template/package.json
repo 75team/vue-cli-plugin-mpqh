@@ -1,11 +1,12 @@
 {
-  "name": "wordbook",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "builder build",
-    "dev": "builder watch"
+    "serve": "builder watch",
+    "build": "builder build"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@qihoo/seapp-builder": "^1.0.0"
+  },
   "dependencies": {}
 }

@@ -1698,6 +1698,10 @@ function createCommonjsModule(fn, module) {
 	return module = { exports: {} }, fn(module, module.exports), module.exports;
 }
 
+function getCjsExportFromNamespace (n) {
+	return n && n['default'] || n;
+}
+
 var inherits_browser = createCommonjsModule(function (module) {
 if (typeof Object.create === 'function') {
   // implementation from standard node.js 'util' module
@@ -10738,6 +10742,35 @@ var helper = {
   render: render
 };
 
+var version$1 = "0.1.0";
+var scripts = {
+	serve: "builder watch",
+	build: "builder build"
+};
+var devDependencies = {
+	"@qihoo/seapp-builder": "^1.0.0"
+};
+var dependencies = {
+};
+var _package = {
+	version: version$1,
+	"private": true,
+	scripts: scripts,
+	devDependencies: devDependencies,
+	dependencies: dependencies
+};
+
+var _package$1 = /*#__PURE__*/Object.freeze({
+	__proto__: null,
+	version: version$1,
+	scripts: scripts,
+	devDependencies: devDependencies,
+	dependencies: dependencies,
+	'default': _package
+});
+
+var require$$1 = getCjsExportFromNamespace(_package$1);
+
 const {
   render: render$1
 } = helper;
@@ -10755,11 +10788,7 @@ var main = async (api, options) => {
   }, {})); // reset pkg
 
   generator.pkg = Object.assign({}, generator.originalPkg);
-  api.extendPackage({
-    devDependencies: {
-      '@qihoo/seapp-builder': '^1.0.0'
-    }
-  });
+  api.extendPackage(require$$1);
 };
 
 module.exports = main;
