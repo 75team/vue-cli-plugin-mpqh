@@ -1,8 +1,8 @@
 App({
   data: () => ({}),
-  onLoad() {},
-  onReady() {},
-  onUnload() {},
-  onShow() {},
-  onHide() {}
-});
+  onLoad () {},
+  onReady () {},
+  onUnload () {},
+  onShow () {},
+  onHide () {}
+})

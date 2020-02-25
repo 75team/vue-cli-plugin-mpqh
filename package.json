@@ -1,8 +1,8 @@
 {
-  "name": "@qihoo/vue-cli-plugin-mpqh",
+  "name": "vue-cli-plugin-mpqh",
   "version": "0.1.1",
   "main": "index.js",
-  "description": "360 mp generator",
+  "description": "360mp generator",
   "maintainers": [
     {
       "name": "raozhanping",

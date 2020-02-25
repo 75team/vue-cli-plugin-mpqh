@@ -1,12 +1,12 @@
-const { render } = require("./helper");
+const { render } = require('./helper')
 const { SEAPP_BUILDER } = require('./constants')
 const util = require('./util')
 
 module.exports = async (api, options) => {
-  const { generator } = api;
+  const { generator } = api
   api.render(
     render(
-      "./template",
+      './template',
       {
         rootOptions: {
           plugins: []
@@ -16,20 +16,20 @@ module.exports = async (api, options) => {
       },
       {}
     )
-  );
+  )
 
   // reset pkg
-  generator.pkg = Object.assign({}, generator.originalPkg);
+  generator.pkg = Object.assign({}, generator.originalPkg)
 
-  let builderVersion = await util.getPkgVersion(SEAPP_BUILDER);
+  const builderVersion = await util.getPkgVersion(SEAPP_BUILDER)
 
   api.extendPackage({
     scripts: {
-      serve: "builder watch",
-      build: "builder build"
+      serve: 'builder watch',
+      build: 'builder build'
     },
     devDependencies: {
-      "@qihoo/seapp-builder": builderVersion
+      '@qihoo/seapp-builder': builderVersion
     }
-  });
-};
+  })
+}

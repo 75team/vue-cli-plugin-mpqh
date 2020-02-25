@@ -9,13 +9,13 @@
 ### @vue/cli 已安装到项目
 
 ```bash
-# {npx|yarn} vue create -i <preset_json> <project-name>
-npx vue create -i "{\"_isPreset\":true,\"plugins\":{\"@qihoo/vue-cli-plugin-mpqh\":{}}}" demo
+# {npx|yarn} vue create -p <git_repo> <project-name>
+npx vue create -p 75team/vue-cli-plugin-mpqh demo
 ```
 
 ### @vue/cli 已安装到全局
 
 ```bash
-# vue create -i <preset_json> <project-name>
-vue create -i "{\"_isPreset\":true,\"plugins\":{\"@qihoo/vue-cli-plugin-mpqh\":{}}}" demo
+# vue create -p <git_repo> <project-name>
+vue create -p 75team/vue-cli-plugin-mpqh demo
 ```

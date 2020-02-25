@@ -1,15 +1,15 @@
 Page({
-  name: "Home",
+  name: 'Home',
 
-  data() {
+  data () {
     return {
       isLogined: false,
       userInfo: {}
-    };
+    }
   },
   methods: {
-    navigateToMore() {
-      qh.navigateTo({ url: "/pages/more/index" });
+    navigateToMore () {
+      qh.navigateTo({ url: '/pages/more/index' })
     }
   }
-});
+})
