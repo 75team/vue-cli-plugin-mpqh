@@ -1,0 +1,77 @@
+body {
+  --default-color: #13cbda;
+    font-size: 14px;
+    color: #222;
+  }
+  .more__navigator:hover .se-breadcrumb--link{
+    color: var(--default-color);
+  }
+
+.home[data-v-584e45b1] {
+  height: 100vh;
+  min-height: 100px;
+  min-width: 376px;
+  padding: 25px 25px 40px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.home--logined .home__logo[data-v-584e45b1] {
+  place-self: start auto;
+  text-align: left;
+}
+.home--logined .logo__img[data-v-584e45b1] {
+  height: 32px;
+  width: 32px;
+  vertical-align: middle;
+}
+.home--logined .logo__title[data-v-584e45b1] {
+  display: inline;
+  font-size: 16px;
+  margin-left: 4px;
+}
+.home__logo[data-v-584e45b1] {
+  place-self: center center;
+}
+.logo__img[data-v-584e45b1] {
+  width: 80px;
+  height: 80px;
+}
+.logo__title[data-v-584e45b1] {
+  margin-top: 12px;
+}
+.home__avatar[data-v-584e45b1] {
+  align-self: start;
+}
+.avatar__img[data-v-584e45b1] {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+}
+.avatar__name[data-v-584e45b1] {
+  font-size: 18px;
+  margin: 12px 0 0;
+}
+.avatar__txt[data-v-584e45b1] {
+  font-size: 16px;
+}
+.more__text[data-v-584e45b1] {
+  color: #222;
+  cursor: pointer;
+  text-decoration-line: underline;
+}
+.more__text[data-v-584e45b1]:hover {
+  color: var(--default-color);
+}
+
+
+/** pages/more/index.css */
+.more[data-v-a3d1b13e] {
+  height: 100vh;
+  max-width: 640px;
+  padding: 25px 25px 40px;
+  margin: 0 auto;
+}
+.more__content[data-v-a3d1b13e] {
+  text-align: justify;
+}
+

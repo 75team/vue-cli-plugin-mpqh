@@ -1,0 +1,8 @@
+{
+  "router": false,
+  "vuex": false,
+  "useConfigFiles": false,
+  "cssPreprocessor": null,
+  "_isPreset": true,
+  "plugins": {}
+}

@@ -1,0 +1,11 @@
+{
+  "name": "wordbook",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "builder build",
+    "dev": "builder watch"
+  },
+  "devDependencies": {},
+  "dependencies": {}
+}
